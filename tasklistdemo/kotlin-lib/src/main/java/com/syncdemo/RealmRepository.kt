@@ -17,12 +17,6 @@ import kotlinx.coroutines.rx3.asObservable
 import org.mongodb.kbson.ObjectId
 import kotlin.time.Duration.Companion.seconds
 
-class CancellationToken(val job: Job) {
-    fun cancel() {
-        job.cancel()
-    }
-}
-
 class RealmRepository {
 
     interface UpdateCallback {
@@ -33,7 +27,7 @@ class RealmRepository {
         fun update(item: ResultsChange<E>)
     }
 
-    var appId = "tasklistapp-souqw"
+    var appId = "APP_ID"
     lateinit var realm: Realm
     private var app: App = App.create(appId)
     lateinit var user: User
