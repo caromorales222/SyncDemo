@@ -1,0 +1,47 @@
+{
+    "properties": {
+        "_id": {
+            "bsonType": "objectId"
+        },
+        "category": {
+            "bsonType": "string"
+        },
+        "currentStatus": {
+            "bsonType": "string"
+        },
+        "history": {
+            "bsonType": "array",
+            "items": {
+                "properties": {
+                    "date": {
+                        "bsonType": "date"
+                    },
+                    "status": {
+                        "bsonType": "string"
+                    }
+                },
+                "required": [
+                    "date",
+                    "status"
+                ],
+                "title": "Status",
+                "type": "object"
+            }
+        },
+        "taskName": {
+            "bsonType": "string"
+        },
+        "userid": {
+            "bsonType": "long"
+        }
+    },
+    "required": [
+        "_id",
+        "category",
+        "currentStatus",
+        "taskName",
+        "userid"
+    ],
+    "title": "Task",
+    "type": "object"
+}

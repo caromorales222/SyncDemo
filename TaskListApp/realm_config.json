@@ -1,0 +1,7 @@
+{
+    "config_version": 20210101,
+    "app_id": "tasklistapp-souqw",
+    "name": "TaskListApp",
+    "location": "IE",
+    "deployment_model": "LOCAL"
+}
