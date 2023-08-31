@@ -1,0 +1,4 @@
+rootProject.name = 'SyncDemo'
+include 'java-lib'
+include 'kotlin-lib'
+
