@@ -1,0 +1,43 @@
+{
+    "title": "Job",
+    "type": "object",
+    "required": [
+        "_id",
+        "currentStatus",
+        "name",
+        "userid"
+    ],
+    "properties": {
+        "_id": {
+            "bsonType": "objectId"
+        },
+        "currentStatus": {
+            "bsonType": "string"
+        },
+        "history": {
+            "bsonType": "array",
+            "items": {
+                "title": "Status",
+                "type": "object",
+                "required": [
+                    "date",
+                    "status"
+                ],
+                "properties": {
+                    "date": {
+                        "bsonType": "date"
+                    },
+                    "status": {
+                        "bsonType": "string"
+                    }
+                }
+            }
+        },
+        "name": {
+            "bsonType": "string"
+        },
+        "userid": {
+            "bsonType": "long"
+        }
+    }
+}
