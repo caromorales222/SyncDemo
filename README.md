@@ -6,19 +6,19 @@ It simulates a simple Task list application. There is a list of Tasks with diffe
 
 ## Empty task list view
 
-![Empty Task List View](doc/pictures/emptyTaskView.png)
+![Empty Task List View](docs/pictures/emptyTaskView.png)
 
 ### Adding a new task
 
-![Creating a New Task](doc/recordings/addTaskView.png)
+![Creating a New Task](docs/recordings/addTaskView.png)
 
 ### Task list view
 
-![Changing Task Status](doc/pictures/taskView.png)
+![Changing Task Status](docs/pictures/taskView.png)
 
 ### Changing a task status
 
-![Changing Task Status](doc/pictures/changeStatusTaskView.png)
+![Changing Task Status](docs/pictures/changeStatusTaskView.png)
 
 ## Requirements
 
@@ -32,16 +32,16 @@ It simulates a simple Task list application. There is a list of Tasks with diffe
 
 2. Once cluster is created, go to App Services tab and create an application. Link this application with the cluster created in the step above
 
-![Create App](doc/pictures/createApplication.png)
+![Create App](docs/pictures/createApplication.png)
 
 Click on "Create App Services"
 
 3. In the section "Rules", create a role for "readAndWriteAll"
 
-![Create Role](doc/pictures/creatRole.png)
+![Create Role](docs/pictures/creatRole.png)
 
 4. In the section "Schema", define a schema in the namespace "syncDemo.Job".
-![Create Schema](doc/pictures/createSchema.png)
+![Create Schema](docs/pictures/createSchema.png)
 
 In the "Job" schema, set next schema:
 
@@ -94,11 +94,11 @@ In the "Job" schema, set next schema:
 6. Add a new user with email "test@mongodb.com" and password "123456".
 7. In the "Device Sync" section, click on "Enable Sync". Left the default configuration and click on Enable Sync.
 
-![Device Sync Enabled](doc/pictures/enableDeviceSync.png)
+![Device Sync Enabled](docs/pictures/enableDeviceSync.png)
 
 9. If there is a prompt from a preset role, select "User can read and write all data".
 
-![Set preset role](doc/pictures/setPresetRole.png)
+![Set preset role](docs/pictures/setPresetRole.png)
 
 10. Open the Swift code with XCode. Replace the "APP_ID" in file "RealmRepo" with the application ID from App services.
 11. Run the simulator. The app is ready to use.
